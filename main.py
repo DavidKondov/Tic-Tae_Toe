@@ -29,7 +29,7 @@ def moves_to_make(board, play1, play2):
     while True:
         choice = (int(input(f'{play1[0]} choose a free position [1-9]: ')))
         print()
-        if turn_counter == 9:
+        if turn_counter == 10:
             print('Draw')
             exit()
         # is choice valid
