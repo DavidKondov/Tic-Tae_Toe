@@ -32,13 +32,14 @@ def moves_to_make(board, play1, play2):
         if turn_counter == 10:
             print('Draw')
             exit()
-        # is choice valid
+
         if is_choice_valid(choice):
             row, col = board_moves(choice)
             if board[row][col] == ' ':
                 board[row][col] = play1[1]
                 real_board(board)
             else:
+                play1, play2 = play2, play1
                 print('Already taken. Choose another field.')
             if turn_counter >= 5:
                 if win_conditions(board, play1[1]):
