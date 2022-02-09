@@ -89,7 +89,7 @@ def win_conditions(board, sign):
 def is_choice_valid(num):
     if 1 <= num <= 9:
         return num
-    return print(f'{num} not in range')
+    return print(f'{num} not in range.')
 
 
 def printing_matrix():
